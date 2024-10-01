@@ -1,38 +1,197 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f9fa;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  /* Header styles */
+  header {
+    background-color: #343a40;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+  
+  header h1 {
+    margin: 0;
   }
-}
+  
+  header input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  header button {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  header button:hover {
+    background-color: #5a6268;
+  }
+  
+  /* Main content */
+  .home,
+  .admin,
+  .takeaway {
+    padding: 2rem;
+  }
+  
+  h1,
+  h2,
+  h3 {
+    margin-bottom: 1rem;
+  }
+  
+  /* Button styles */
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 1rem;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  footer button {
+    background-color: #28a745;
+  }
+  
+  footer button:hover {
+    background-color: #218838;
+  }
+  
+  /* Takeaway page */
+  .takeaway {
+    display: flex;
+  }
+  
+  .aside {
+    width: 30%;
+    padding-right: 2rem;
+  }
+  
+  .main-content {
+    width: 70%;
+  }
+  
+  .cuisine-menu button {
+    display: block;
+    margin-bottom: 1rem;
+    width: 100%;
+    padding: 1rem;
+    background-color: #ffc107;
+  }
+  
+  .cuisine-menu button:hover {
+    background-color: #e0a800;
+  }
+  
+  .dish-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .dish-list li {
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .dish-list button {
+    background-color: #28a745;
+  }
+  
+  .dish-list button:hover {
+    background-color: #218838;
+  }
+  
+  /* Order Summary */
+  .order-summary {
+    position: fixed;
+    right: 2rem;
+    bottom: 5rem;
+    background-color: white;
+    border: 1px solid #dee2e6;
+    padding: 1rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .order-summary h3 {
+    margin-top: 0;
+  }
+  
+  .order-summary ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .order-summary li {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Admin styles */
+  .admin ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .admin li {
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .admin li > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .admin li ul {
+    margin-top: 1rem;
+  }
+  
+  .admin li ul li {
+    padding: 0.5rem;
+    background-color: #f1f3f5;
+    border: 1px solid #dee2e6;
+    margin-bottom: 0.5rem;
+  }
+  
+  .admin li button {
+    margin-right: 0.5rem;
+  }
+  
